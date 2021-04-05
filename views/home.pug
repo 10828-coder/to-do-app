@@ -1,6 +1,19 @@
 extends layout.pug
+block number1 
+    if error 
+        p Please enter some data
+    if success
+        p Well done!
 
-block content
-    .container
-        h1 This app will allow users to manage your tasks and plans.
-        a(href='/create') Create task
+        
+    form.form(action='/add' method='POST')
+        input.input(type='text' placeholder='Tell me what to add...' name= 'todo')
+        button.btn Add
+
+    div.todos
+        if todos.length 
+            each todo in todos  
+                p.todo #{ todo.description }
+        else 
+            p.todo Empty list of tasks        
+            
