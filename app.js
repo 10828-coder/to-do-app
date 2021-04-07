@@ -20,7 +20,7 @@ app.post('/add', (req, res) => {
     const formData = req.body
 
     if(formData.todo.trim() == ''){
-        
+
         
         fs.readFile('./data/todos.json', (err, data) => {
             if (err) throw err
@@ -60,7 +60,7 @@ app.post('/add', (req, res) => {
 
 app.listen(PORT, err => {
     if(err) throw err
-    console.log('Server is running on port ${PORT}')
+    console.log(`Server is running on port ${PORT}`)
     
 })
   function id () {

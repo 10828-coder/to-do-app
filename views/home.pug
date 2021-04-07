@@ -1,9 +1,10 @@
 extends layout.pug
 block number1 
-    if error 
-        p Please enter some data
-    if success
-        p Well done!
+    div.centred
+        if error 
+            p.error Please enter some data
+        if success
+            p.success Well done!
 
         
     form.form(action='/add' method='POST')

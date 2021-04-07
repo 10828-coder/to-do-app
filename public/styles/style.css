@@ -1,3 +1,7 @@
+.root{
+    font-family: 'New Tegomin', serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -63,11 +67,34 @@ body{
     padding: 10px;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.692);
-    border-bottom:1px dashed rgba(216, 191, 216, 0.507);
-
-    
+    border-bottom:1px dashed rgba(216, 191, 216, 0.507);    
+}
+.todo:last-child{
+    border-bottom: none;
 }
 .todo:hover{
     color: black;
     background-color:rgba(255, 255, 255, 0.473) ;
+}
+.error{
+    display: inline-block;
+    text-align: center;
+    color: red;
+    font-size: 1,6rem;
+    border: 3px solid red;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.success{
+    display: inline-block;
+    text-align: center;
+    color: green;
+    font-size: 1,6rem;
+    border: 3px solid green;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.centred{
+    display: flex;
+    justify-content: center;
 }
