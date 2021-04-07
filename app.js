@@ -57,6 +57,17 @@ app.post('/add', (req, res) => {
         })
     }
 })
+
+app.get('/api/v1/todos', (req, res) => {
+    fs.readFile('./data/todos.json', (err, data) => {
+      if (err) throw err
+  
+      const todos = JSON.parse(data)
+  
+      res.json(todos)
+    })
+})
+
 app.get('/:id/delete', (req, res) =>{
     const id = req.params.id
 
