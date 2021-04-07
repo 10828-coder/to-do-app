@@ -2,9 +2,9 @@
 1)Download the source code
 ```bash
 git clone https://github.com/10828-coder/to-do-app
-
-Or you can downlkoad the to-do-app.zip file
 ```
+Or you can download the to-do-app.zip file
+
 2) Install deps
 ```bash
 npm i
